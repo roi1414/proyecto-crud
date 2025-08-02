@@ -14,3 +14,6 @@ form.addEventListener("submit", function (e) {
   lista.appendChild(li);
   form.reset();
 });
+function pagar() {
+  console.log("Simulando integración con API de pago");
+}
