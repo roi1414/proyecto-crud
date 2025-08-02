@@ -1,0 +1,11 @@
+const form = document.getElementById("form");
+const lista = document.getElementById("lista");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const nombre = document.getElementById("nombre").value;
+  const li = document.createElement("li");
+  li.textContent = nombre;
+  lista.appendChild(li);
+  form.reset();
+});
